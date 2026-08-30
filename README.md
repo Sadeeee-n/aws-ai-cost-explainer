@@ -80,6 +80,18 @@ The model generates:
 
 Core calculations remain in Python rather than being delegated to the LLM.
 
+## Example Output
+
+Using demo AWS cost data:
+
+- **Total monthly cost:** $801.45
+- **Highest-cost service:** Amazon EC2
+- **Amazon EC2 contribution:** 52.5% of total spend
+
+The application flags EC2 as a major cost driver and sends the calculated cost breakdown to Amazon Nova Lite. The model then produces a plain-language spending summary and practical optimisation recommendations.
+
+> Demo mode allows the complete analysis workflow to be tested without exposing real AWS billing information.
+
 ## Why I Built This
 
 I built this project to gain hands-on experience combining **AWS, Python, cloud cost management, and generative AI**.
@@ -88,7 +100,7 @@ It demonstrates how deterministic software logic can be combined with an LLM to 
 
 ## Development
 
-Built using **VS Code, AWS CLI, Git, GitHub, and Claude Code** as an AI-assisted development tool.
+Built using VS Code, AWS CLI, Git and GitHub. I used Claude Code as an AI-assisted development tool to support implementation, debugging and code refinement, while manually reviewing, testing and validating the application’s behaviour and AWS integration.
 
 ## Future Improvements
 
